@@ -1,0 +1,28 @@
+import pygame as pg
+
+pg.init()
+pg.display.set_caption("Ping Pong")
+size = WIDTH, HEIGHT = 640, 480
+screen = pg.display.set_mode(size)
+clock = pg.time.Clock()
+
+# CONSTANTS
+
+SCORECARD_WIDTH = WIDTH
+SCORECARD_HEIGHT = 40
+
+BOUND_WIDTH = WIDTH
+BOUND_HEIGHT = 20
+
+BOARD_WIDTH = 20
+BOARD_HEIGHT = 100
+BOARD_VEL = 5
+
+BALL_DIAM = 20
+BALL_VEL = 2
+BALL_MAX_LEFT = BOARD_WIDTH
+BALL_MAX_RIGHT = WIDTH - BOARD_WIDTH
+BALL_MAX_TOP = BOUND_HEIGHT + SCORECARD_HEIGHT
+BALL_MAX_BOTTOM = HEIGHT - BOUND_HEIGHT
+
+
